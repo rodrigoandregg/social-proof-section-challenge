@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* fonts */
+    --font1: 'League Spartan', sans-serif;
+    /* colors */
+    --primary: hsl(300, 43%, 22%);
+    --subtitle: hsl(333, 80%, 67%);
+    --paragraph: hsl(303, 10%, 53%);
+    --ratingbg: hsl(300, 24%, 96%);
+    --mainbg: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg-pattern-top-mobile.svg) no-repeat, url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom , var(--mainbg);
+    font-family: var(--font1);
+    font-size: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.main__title {
+    padding: 0 25px;
+    font-size: 2.5rem;
+    line-height: .8;
+    letter-spacing: -1px;
+    color: var(--primary);
+}
+
+.main__paragraph {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--paragraph);
+}
+
+/* rating section */
+
+.section__rating {
+    display: grid;
+    margin: 0 auto;
+    width: 320px;
+    gap: 20px;
+}
+
+.rating__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ratingbg);
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+}
+.rating__stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating__heading {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+/* testimonials section */
+
+.section__testimonials {
+    margin: 0 auto;
+    display: grid;
+    width: 320px;
+    gap: 20px;
+}
+
+.testimonials__container {
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 35px;
+    color: var(--mainbg);
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonials__info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonials__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.avatar__img {
+    width: 100%;
+}
+
+
+.info__title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.info__paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--subtitle);
+}
+
+.testimonials__paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
